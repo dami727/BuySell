@@ -1,0 +1,52 @@
+.bg_rate {
+  background: linear-gradient(
+      to right,
+      #514a9d,
+      #24c6dc
+  );
+  color: #fff;
+}
+
+.bg_order {
+  background: #134e5e;
+  background: -webkit-linear-gradient(
+      to left,
+      #71b280,
+      #134e5e
+  );
+  background: linear-gradient(
+      to left,
+      #71b280,
+      #134e5e
+  );
+  color: #fff;
+}
+
+.bg_registrations {
+  background: #ff512f;
+  background: -webkit-linear-gradient(
+      to left,
+      #f09819,
+      #ff512f
+  );
+  background: linear-gradient(
+      to left,
+      #f09819,
+      #ff512f
+  );
+  color: #fff;
+}
+.bg_visitors {
+  background: #e52d27;
+  background: -webkit-linear-gradient(
+      to right,
+      #b31217,
+      #e52d27
+  );
+  background: linear-gradient(
+      to right,
+      #b31217,
+      #e52d27
+  );
+  color: #fff;
+}

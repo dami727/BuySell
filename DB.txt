@@ -1,0 +1,134 @@
+=========== Product DB =============== 222222222222222222
+****Table Name****
+Product title, status, Price range, size, color, key Feature, Shipping,  Quantity range, barcode, category, Description, Return Policy
+
+===== category table =======  111111111111
+*** main_category *** 
+id, category, category_slug, category_status, image, Feature image,
+=========
+*** sub_category *** 
+id, sub_category, sub_category_slug, sub_status,
+==========
+*** child_categormy ***
+id, child_catagory, child_catagory_slug, Chaild_status,
+
+===== attribute ====
+	- attribute list
+	- add attribute
+
+==== order management ======= 
+	- panding order
+	- accept order
+	- oder discusing
+	- manufature
+	- shipping pocessing
+	- dalevery
+	- cancel
+	- payment cancel
+	- payment complete
+	- payment refund
+	- Rescheduled
+	- scheduled
+
+===== dispus ======
+	- search courier
+	- courier list
+	- shipping by
+		- air
+		- cargo
+		- ship
+	- cnf by
+		- add cnf
+		- cnf list
+	- area
+		- add area
+		- area list
+
+===== buyer management ====
+	- add buyer
+	- buyer list
+	- approve buyer
+	- buyer discussion
+	- buyer commission
+	- buyer report
+	- buyer payment history
+	- buyer wallet
+		- add wallet
+		- withdrow
+	- subscription
+
+===== seller management =====
+	- add buyer
+	- buyer list
+	- approve buyer
+	- seller discussion
+	- seller commission
+	- seller report
+	- seller payment history
+	- seller wallet
+		- add wallet
+		- withdrow
+	- subscription
+
+===== refarel ======
+	- refarel code/link
+	- refarel list
+	- refarel bonus
+
+===== comment =====
+	- approve comment
+	- decline comment
+====== Review =====
+	- approve Review 
+	- decline Review 
+======= Report =====
+	- approve comment
+	- decline comment
+======= my wallet ======
+	- add wallet list
+	- withdrow request status
+		- panding
+		- accept
+		- processing
+		- payment
+	- withdrow list
+
+===== massage =====
+	- live chat
+	- ticket
+	- complain
+===== blogs ======
+	- add blogs
+	- manage blogs
+	- category
+
+===== role =======
+	- add role
+	- manage role
+
+===== employ ======
+	- add employ
+	- manage employ
+
+===== setting =====
+	- app setting
+	- unit
+	- currency
+	- language
+
+====== web setting ====
+	- homepage setting
+	- manu setting
+	- email setting
+	- payment setting
+	- languagee setting
+
+======= system activation ======
+	- activation
+	- genarel backup
+	- visitor list (api)
+
+======== Auto Update ===========
+		
+
+ 
