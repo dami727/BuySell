@@ -23,23 +23,25 @@ class ProductController extends Controller
 
     public function post_product(Request $request)
     {
-        $Product = new ProductController;
-        $Product->product_title = $request->product_title;
-        $Product->product_description = $request->product_description;
-        $Product->status = $request->status;
-        $Product->category = $request->category;
-        $Product->start_price = $request->start_price;
-        $Product->end_price = $request->end_price;
-        $Product->start_quaantity_range = $request->start_quaantity_range;
-        $Product->end_quaantity_range = $request->end_quaantity_range;
-        $Product->barcode = $request->barcode;
-        $Product->start_shipping_time = $request->start_shipping_time;
-        $Product->end_shipping_time = $request->end_shipping_time;
-        $Product->created_at = Carbon::now();
-        $Product->updated_at = Carbon::now();
-        $Product->save();
+        $color = $request->post('color');
+        dd($color);
+        // $Product = new ProductController;
+        // $Product->product_title = $request->product_title;
+        // $Product->product_description = $request->product_description;
+        // $Product->status = $request->status;
+        // $Product->category = $request->category;
+        // $Product->start_price = $request->start_price;
+        // $Product->end_price = $request->end_price;
+        // $Product->start_quaantity_range = $request->start_quaantity_range;
+        // $Product->end_quaantity_range = $request->end_quaantity_range;
+        // $Product->barcode = $request->barcode;
+        // $Product->start_shipping_time = $request->start_shipping_time;
+        // $Product->end_shipping_time = $request->end_shipping_time;
+        // $Product->created_at = Carbon::now();
+        // $Product->updated_at = Carbon::now();
+        // $Product->save();
 
-        return redirect()->back();
+        // return redirect()->back();
         // $data = array (
         //     'product_title'   => $request->input('product_title'),
         //     'product_description'   => $request->input('product_description'),

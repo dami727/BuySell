@@ -7,57 +7,70 @@
     <title>BuySell</title>
      <!-- Font Awesome -->
     <link rel="stylesheet" href="{{asset('plugins/fontawesome-free/css/all.min.css')}}">
+    <!-- owl -->
+    <link rel="stylesheet" href="{{asset('dist/css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{asset('dist/css/owl.theme.default.min.css')}}">
     <!-- bootstrap -->
     <link rel="stylesheet" href="{{asset('dist/css/bootstrap4.min.css')}}">
+    <!-- custom css -->
+    <link rel="stylesheet" href="{{asset('css/custom.css')}}">
 </head>
 <body>
     <!-- start header -->
     <header>
         <!-- start top navbar -->
-        <div class="row">
-            <div class="col-sm-4 pl-5">
-                <img src="{{asset('dist/img/logo.png')}}" height="50px" width="150px" alt="">
+        <div class="row top_navbar px-3">
+            <div class="col-sm-3">
+                <a href="">
+                    <img src="{{asset('dist/img/Dot skill.png')}}" height="50px" width="150px" alt="">
+                </a>
             </div>
-            <div class="col-sm-4 p-2">
+            <div class="col-sm-5 pt-2">
                 <div class="input-group">
-                    <input type="search" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
-                    <button type="button" class="btn btn-primary">search</button>
+                    <div class="input-group-append">
+                        <button class="btn search_button" type="button"><strong><i class="fas fa-camera"></i></strong></button>
+                    </div>
+                    <input type="text" class="form-control p-3" placeholder="Search with Keyword" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button class="btn search_button" type="button"><strong>Search</strong></button>
+                    </div>
                 </div>
             </div>
             <div class="col-sm-4 p-2">
-                <div class="row">
-                    <div class="col-sm-7"></div>
-                    <div class="col-sm-1 text-center">
-                        <span class="btn"><i class="fas fa-comments"></i></span>
-                    </div>
-                    <div class="col-sm-1 text-center">
-                        <span class="btn"><i class="fas fa-heart"></i></span>
-                    </div>
-                    <div class="col-sm-1 text-center">
-                        <span class="btn"><i class="fas fa-shopping-cart"></i></span>
-                    </div>
-
-                    <div class="col-sm-1 text-center">
-                        <span class="btn"><i class="fas fa-user"></i></span>
-                    </div>
-                    <div class="col-sm-1"></div>
+                <div class="row float-right">
+                    <span class="btn text-light"><i class="fas fa-comments"></i> Massage</span>
+                    <span class="btn text-light"><i class="fas fa-heart"></i> WhiteList</span>
+                    <span class="btn text-light"><i class="fas fa-shopping-cart"></i> Cart</span>
+                    <span class="btn text-light"><i class="fas fa-user"></i> User</span>
                 </div>
             </div>
         </div>
         <!-- end top navbar -->
         <!-- start navbar -->
         <section>
-            <nav class="navbar navbar-expand-lg navbar-light bg-success">
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                      <a class="nav-link nav-btn" href=""><i class="fas fa-home"></i> Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
+                      <a class="nav-link nav-btn" href="{{route('view')}}">Today's Deals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-btn" href="{{route('view')}}">Customer Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-btn" href="{{route('view')}}">Registry</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-btn" href="{{route('view')}}">Gift Cards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-btn" href="{{route('view')}}">Sell</a>
                     </li>
                   </ul>
                 </div>
@@ -110,8 +123,14 @@
         <!-- end section -->
     </footer>
     <!-- end footer -->
+    <!-- jQuery -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <!-- owl carousel js -->
+    <script src="{{asset('dist/js/owl.carousel.min.js')}}"></script>
+    <!-- bootstrap js -->
     <script src="{{asset('plugins/bootstrap/js/bootstrap.min.js')}}"></script>
     <script src="{{asset('plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    <!-- custom js -->
+    <script src="{{asset('js/custom.js')}}"></script>
 </body>
 </html>

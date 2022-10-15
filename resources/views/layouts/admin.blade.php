@@ -16,7 +16,7 @@
   <!-- summernote -->
   <link rel="stylesheet" href="{{asset('plugins/summernote/summernote-bs4.min.css')}}">
   <!-- custom css -->
-  <link rel="stylesheet" href="{{asset('css/custom.css')}}">
+  <link rel="stylesheet" href="{{asset('dist/css/custom.css')}}">
 </head>
 <body class="hold-transition sidebar-mini layout-fixed body-color">
 <div class="wrapper">
@@ -120,6 +120,161 @@
             </a>
           </li>
           <!-- end product -->
+          <!-- start Order Management -->
+          <li class="nav-item">
+            <a href="" class="nav-link">
+              <i class="nav-icon fas fa-tachometer-alt"></i><p> Order Management <i class="fas fa-angle-left right"></i></p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Panding Order </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Accept Order </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Order Discusing </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Manufature </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Shipping Processing </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Dalevery </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Cancel </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Payment Cancel </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Payment Complate </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Payment Refund </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Rescheduled </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Scheduled </p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- end Order Management -->
+          <!-- start dispus -->
+          <li class="nav-item">
+            <a href="" class="nav-link">
+              <i class="nav-icon fas fa-tachometer-alt"></i><p> Dispus <i class="fas fa-angle-left right"></i></p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Search Courier </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Courier List </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <!-- start sub manu -->
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Shipping By <i class="fas fa-angle-left right"></i> </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item ml-4">
+                      <a href="" class="nav-link">
+                        <i class="fas fa-angle-right nav-icon"></i>
+                        <p> Air </p>
+                      </a>
+                  </li>
+                  <li class="nav-item ml-4">
+                    <a href="" class="nav-link">
+                      <i class="fas fa-angle-right nav-icon"></i>
+                      <p> Cargo </p>
+                    </a>
+                  </li>
+                  <li class="nav-item ml-4">
+                    <a href="" class="nav-link">
+                      <i class="fas fa-angle-right nav-icon"></i>
+                      <p> Ship </p>
+                    </a>
+                  </li>
+                </ul>
+                <!-- end sub manu -->
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> CNF By </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Area </p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- end dispus -->
+          <!-- start Buyer Management -->
+          <li class="nav-item">
+            <a href="" class="nav-link">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p> Buyer Management </p>
+            </a>
+          </li>
+          <!-- end Buyer Management -->
+
+
+
+
+
         </ul>
       </nav>
       <!-- sidebar-menu -->

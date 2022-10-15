@@ -29,51 +29,29 @@
                         <div class="col-1"> <span id="add_feature" class="btn btn-primary"><i class="fas fa-plus"></i></span></div>                      
                     </div>
                 </div>
-                {{-- <div class="row">
-                    <div class="col-sm-5">
-                        <div class="form-group">
-                            <label for="color" class="form-label">Color</label>
-                            <div id="color"></div>
-                            <div class="row my-1">
-                                <div class="col-10"><input type="text" name="color[]" class="form-control" placeholder="Write feature"></div>
-                                <div class="col-2"> <span id="add_color" class="btn btn-primary"><i class="fas fa-plus"></i></span></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-1"></div>
-                    <div class="col-sm-5">
-                        <div class="form-group">
-                            <label for="size" class="form-label">Size</label>
-                            <div id="size"></div>
-                            <div class="row my-1">
-                                <div class="col-10"><input type="text" name="size[]" class="form-control" placeholder="Write feature"></div>
-                                <div class="col-2"> <span id="add_size" class="btn btn-primary"><i class="fas fa-plus"></i></span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div> --}}
-                <div id="append"></div>
+                <div id="append">
+                </div>
                 <div class="card my-2">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-sm-3">
                                 <div class="form-group">
                                     <label for="size">Size</label>
-                                    <input type="text" class="form-control" name="size" placeholder="Size">
+                                    <input type="text" class="form-control" name="size[]" placeholder="Size">
                                 </div>
                             </div>
                             <div class="col-sm-3">
                                 <div class="form-group">
                                     <label for="color">Color</label>
-                                    <input type="text" class="form-control" name="color" placeholder="Color">
+                                    <input type="text" class="form-control" name="color[]" placeholder="Color">
                                 </div>
                             </div>
                             <div class="col-sm-5">
                                 <div class="form-group">
                                     <label for="status" class="form-label">Price Range</label>
                                     <div class="row">
-                                        <div class="col-6"><input type="number" name="start_price" class="form-control" placeholder="00.00"></div>
-                                        <div class="col-6"><input type="number" name="end_price" class="form-control" placeholder="00.00"></div>
+                                        <div class="col-6"><input type="number" name="start_price[]" class="form-control" placeholder="00.00"></div>
+                                        <div class="col-6"><input type="number" name="end_price[]" class="form-control" placeholder="00.00"></div>
                                     </div>
                                 </div>
                             </div>
@@ -88,7 +66,7 @@
                             <div class="col-sm-4">
                                <div class="form-group">
                                     <label for="att_image">Image</label>
-                                    <input type="file" class="p-1" name="att_image">
+                                    <input type="file" class="p-1" name="att_image[]">
                                 </div>
                             </div>
                         </div>
@@ -175,21 +153,20 @@
 </form>
 <!-- end create product -->
 <!-- jQuery -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 <!-- custom jquery -->
 <script>
   $(document).ready(function () {
-    $('#remove').click(function(){
-         alert("hello")
-    });
+    
     $('#add_feature').click(function(){
-        $('#feature').prepend('<div class="row my-1"><div class="col-11"><input type="text" class="form-control" placeholder="Write feature"></div><div class="col-1"> <span id="remove_feature" class="btn btn-danger"><i class="fas fa-times"></i></span></div></div>');
+        $('#feature').prepend('<div class="row my-1"><div class="col-11"><input type="text" class="form-control" placeholder="Write feature"></div><div class="col-1"> <span id="remove[]" class="btn btn-danger"><i class="fas fa-times"></i></span></div></div>');
     });
     $('#more').click(function(){
         $('#append').append('<div class="card my-2"><div class="card-body"><div class="row"><div class="col-sm-3"><div class="form-group"><label for="size">Size</label><input type="text" class="form-control" name="size" placeholder="Size"></div></div><div class="col-sm-3"><div class="form-group"><label for="color">Color</label><input type="text" class="form-control" name="color" placeholder="Color"></div></div><div class="col-sm-5"><div class="form-group"><label for="status" class="form-label">Price Range</label><div class="row"><div class="col-6"><input type="number" name="start_price" class="form-control" placeholder="00.00"></div><div class="col-6"><input type="number" name="end_price" class="form-control" placeholder="00.00"></div></div></div></div><div class="col-sm-1"><div class="form-group"><label for=""></label><span id="remove" class="btn btn-danger float-right mt-2"><i class="fas fa-times"></i></span></div></div></div><div class="row"><div class="col-sm-4"><div class="form-group"><label for="att_image">Image</label><input type="file" class="p-1" name="att_image"></div></div></div></div></div>');
     });
+    $('#add_feature').click(function(){
+         alert("hello");
+    });
 });
-</script>
-
-
-@endsection
+</script>@endsection

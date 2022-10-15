@@ -1,52 +1,85 @@
-.bg_rate {
-  background: linear-gradient(
-      to right,
-      #514a9d,
-      #24c6dc
-  );
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color: #EAEDED;
+  
+}
+html{
+  overflow-x: hidden !important;
+}
+.top_navbar{
+  background-color: #131921;
   color: #fff;
+}
+.search_button{
+  background-color: #F7CA00;
+}
+.navbar{
+  background-color: #232F3E;
+  color: #fff;
+}
+.nav-link{
+  color: #fff !important;
+  padding: 3px;
+}
+.nav-btn{
+  border: 1px solid #232F3E;
+}
+.nav-btn:hover{
+  border: 1px solid #fff;
+  border-radius: 3px;
+}
+.inner_row{
+  padding: 0rem 1rem !important;
+
 }
 
-.bg_order {
-  background: #134e5e;
-  background: -webkit-linear-gradient(
-      to left,
-      #71b280,
-      #134e5e
-  );
-  background: linear-gradient(
-      to left,
-      #71b280,
-      #134e5e
-  );
-  color: #fff;
+/* ========================
+      home page
+===========================*/
+#slider{
+  height: 16rem;
+}
+.carousel-inner{
+  background-size: cover;
+}
+.card{
+  border-radius: 0;
+}
+.bg_category{
+  background-color: #F2FAFB;
+  border: 1px solid #fff;
+  padding-top: 1rem;
+}
+.bg_category p{
+  color: #000;
+}
+.securely_singin{
+  text-align: center;
+  background-color: #F7CA00;
+  border-radius: 2rem;
+  width: 100%;
+}
+.add{
+  padding-top: 1rem;
 }
 
-.bg_registrations {
-  background: #ff512f;
-  background: -webkit-linear-gradient(
-      to left,
-      #f09819,
-      #ff512f
-  );
-  background: linear-gradient(
-      to left,
-      #f09819,
-      #ff512f
-  );
-  color: #fff;
-}
-.bg_visitors {
-  background: #e52d27;
-  background: -webkit-linear-gradient(
-      to right,
-      #b31217,
-      #e52d27
-  );
-  background: linear-gradient(
-      to right,
-      #b31217,
-      #e52d27
-  );
-  color: #fff;
-}
+/* ===========================
+  produts page
+  ============================ */
+  .social-icon{
+    font-size: 2rem;
+    margin: 0.5rem;
+  }
+
+
+/* ==========================
+  media query for responsive
+============================= */
+@media only screen and (max-width: 375px) {
+  .carousel{
+    height: 5rem !important;
+  }
+};

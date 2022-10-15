@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Admin Login</title>
-    <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('dist/css/bootstrap4.min.css')}}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="{{asset('css/login.css')}}">
 </head>
 <body>
     <div class="login-body">
         <div class="row text-center m-3">
-            <h1><i class="fa-solid fa-circle-user"></i></h1>
+            <h1><i class="fa-solid fa-circle-user"></i></h1> <br>
             <h5>Admin Login</h5>
         </div>
         <div class="row">
+            <div class="col-12">
             <form action="{{route('admin')}}" method="POST">
                 @csrf
                 @if($errors->any())
@@ -33,6 +34,7 @@
                 </div> <br>
                 <button type="submit" class="btn btn-primary px-3">Login</button>
             </form>
+        </div>
         </div>
     </div>
 </body>
