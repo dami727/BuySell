@@ -16,9 +16,5 @@ class WebsiteController extends Controller
         return view('web.product_view');
     }
     //user login
-    public function login()
-    {
-        
-    }
 
 }

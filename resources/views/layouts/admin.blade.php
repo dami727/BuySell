@@ -264,14 +264,15 @@
           </li>
           <!-- end dispus -->
           <!-- start Buyer Management -->
-          <li class="nav-item">
-            <a href="" class="nav-link">
+          <li class="nav-item {{request()->is('buyer_list')?'menu-open':(request()->is('seller_list')?'menu-open':'')}}">
+            <a href="" class="nav-link {{request()->is('buyer_list')?'active':(request()->is('seller_list')?'active':'')}}">
               <i class="fab fa-buysellads nav-icon"></i>
-              <p> Buyer Management </p> <i class="fas fa-angle-left right"></i>
+              <p> Client Management </p> <i class="fas fa-angle-left right"></i>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="" class="nav-link">
+                
+                <a href="{{route('buyer_list')}}" class="nav-link {{request()->is('buyer_list')?'active':''}}">
                   <i class="fas fa-angle-right nav-icon"></i>
                   <p> Buyer List </p>
                 </a>
@@ -280,6 +281,18 @@
                 <a href="" class="nav-link">
                   <i class="fas fa-angle-right nav-icon"></i>
                   <p> Approve Buyer </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{route('seller_list')}}" class="nav-link {{request()->is('seller_list')?'active':''}}">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Seller List </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Approve Seller </p>
                 </a>
               </li>
               <li class="nav-item">

@@ -5,6 +5,8 @@ use App\Http\Controllers\Admin\Auth\AuthController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\Category\Categorycontroller;
 use App\Http\Controllers\Admin\Product\ProductController;
+use App\Http\Controllers\Admin\Client\BuyermanagementController;
+use App\Http\Controllers\Admin\Client\SellermanagementController;
  
 // admin login
 Route::get('/admin', [AuthController::class, 'login'])->name('admin');
@@ -32,7 +34,12 @@ Route::get('/child_category', [Categorycontroller::class, 'child_category'])->na
 Route::post('/child_category', [Categorycontroller::class, 'create_child_category'])->name('child_category');
 Route::delete('/child_category_delete/{id}', [Categorycontroller::class, 'child_category_delete'])->name('child_category_delete');
 
-//products
+// products
 Route::get('/products', [ProductController::class, 'index'])->name('products');
 Route::get('/add_products', [ProductController::class, 'create_product'])->name('add_products');
 Route::post('/add_products', [ProductController::class, 'post_product'])->name('add_products');
+
+// client management
+Route::get('/buyer_list', [BuyermanagementController::class, 'buyer_list'])->name('buyer_list');
+
+Route::get('/seller_list', [SellermanagementController::class, 'seller_list'])->name('seller_list');
