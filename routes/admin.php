@@ -12,7 +12,7 @@ Route::post('/admin', [AuthController::class, 'postlogin'])->name('admin');
 // admin dashboard
 Route::get('/admin_dashboard', [DashboardController::class, 'dashboard'])->middleware('admin')->name('admin_dashboard');
 // admin logout
-Route::get('/logout', [DashboardController::class, 'logout'])->name('logout');
+Route::get('/logout', [DashboardController::class, 'logout'])->name('admin_logout');
 
 // main category
 Route::get('/category_list', [Categorycontroller::class, 'index'])->name('category_list');

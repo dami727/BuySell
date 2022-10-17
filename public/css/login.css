@@ -6,3 +6,9 @@ body{
     margin: 5rem 25rem;
     padding: 3rem;
 }
+.user-login, .admin-login{
+    font-size: 3rem;
+}
+.card{
+    border-radius: 0px;
+}

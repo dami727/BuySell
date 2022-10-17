@@ -41,7 +41,7 @@
                     <span class="btn text-light"><i class="fas fa-comments"></i> Massage</span>
                     <span class="btn text-light"><i class="fas fa-heart"></i> WhiteList</span>
                     <span class="btn text-light"><i class="fas fa-shopping-cart"></i> Cart</span>
-                    <span class="btn text-light"><i class="fas fa-user"></i> User</span>
+                    <span class="btn text-light"><a href="{{route('login')}}"><i class="fas fa-user"></i> User </a></span>
                 </div>
             </div>
         </div>

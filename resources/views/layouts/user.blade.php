@@ -13,7 +13,7 @@
   <link rel="icon" href="" type="image/gif" sizes="16x16">
   <!-- bootstrap -->
   <link rel="stylesheet" href="{{asset('dist/css/dashboard.min.css')}}">
-  <link rel="stylesheet" href="{{asset('dist/css/bootstrap.min.css')}}" rel="stylesheet">
+  <link rel="stylesheet" href="{{asset('dist/css/bootstrap4.min.css')}}" rel="stylesheet">
   <!-- custom css -->
   <link rel="stylesheet" href="{{asset('css/custom.css')}}">
 </head>

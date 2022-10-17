@@ -11,9 +11,9 @@
 </head>
 <body>
     <div class="login-body">
-        <div class="row text-center m-3">
-            <h1><i class="fa-solid fa-circle-user"></i></h1> <br>
-            <h5>Admin Login</h5>
+        <div class="text-center m-3">
+            <h1 class="admin-login"><i class="fa-solid fa-circle-user"></i></h1>
+            <h4>Admin Login</h4>
         </div>
         <div class="row">
             <div class="col-12">
@@ -25,11 +25,11 @@
                     </div>
                 @endif
                 <div class="form-group">
-                    <label for="email" class="form-label">Admin Email</label>
+                    <label for="email" class="form-label">Email</label>
                     <input type="email" name="email" id="email" class="form-control" placeholder="Email">
                 </div>
                 <div class="form-group mt-2">
-                    <label for="password" class="form-label">Admin Password</label>
+                    <label for="password" class="form-label">Password</label>
                     <input type="password" name="password" id="password" class="form-control" placeholder="Password">
                 </div> <br>
                 <button type="submit" class="btn btn-primary px-3">Login</button>

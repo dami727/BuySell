@@ -10,3 +10,4 @@ Route::get('/', function () {
 // website controllers
 Route::get('/view', [WebsiteController::class, 'view'])->name('view');
 Route::get('/product_view', [WebsiteController::class, 'product_view'])->name('product_view');
+// Route::get('/login', [WebsiteController::class, 'login'])->name('login');

@@ -87,39 +87,50 @@
 
 <!-- start product section -->
 <section>
-    <div class="row w-100">
+    <div class="row inner_row">
         <!-- product left section -->
-        <div class="col-sm-4">
+        <div class="col-sm-3">
             <div class="card">
                 <div class="card-header">
-                    <h4 class="card-title">Today Best sale</h4>
+                    <h4 class="card-title">Filter Post</h4>
                 </div>
                 <div class="card-body">
-                    <div class="row my-2 border">
-                        <div class="col-4 p-0">
-                            <img src="{{asset('dist/img/img.png')}}" width="100%" height="100%" alt="">
+                    <div class="category">
+                        <h6>Category</h6> <hr>
+                        <a href="" class="btn btn-outline-success category_btn w-100 text-left m-1">Category1</a>
+                        <a href="" class="btn btn-outline-success category_btn w-100 text-left m-1">Category1</a>
+                        <a href="" class="btn btn-outline-success category_btn w-100 text-left m-1">Category1</a>
+                        <a href="" class="btn btn-outline-success category_btn w-100 text-left m-1">Category1</a>
+                        <a href="" class="btn btn-outline-success category_btn w-100 text-left m-1">Category1</a>
+                        <a href="" class="btn btn-outline-success category_btn w-100 text-left m-1">Category1</a>
+                    </div> <br>
+                    <div class="condiation">
+                        <h6>Condiation</h6> <hr>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="new_condiation">
+                            <label class="form-check-label" for="new_condiation">New</label>
                         </div>
-                        <div class="col-8 p-2">
-                            <p><strong>Lorem ipsum dolor sit amet.</strong></p>
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. dgfd</span>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="use_condiation">
+                            <label class="form-check-label" for="use_condiation">Used</label>
                         </div>
-                    </div>
-                    <div class="row my-2 border">
-                        <div class="col-4 p-0">
-                            <img src="{{asset('dist/img/img.png')}}" width="100%" height="100%" alt="">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="refurbished_condiation">
+                            <label class="form-check-label" for="refurbished_condiation">Refurbished</label>
                         </div>
-                        <div class="col-8 p-2">
-                            <p><strong>Lorem ipsum dolor sit amet.</strong></p>
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. dgfd</span>
-                        </div>
-                    </div>
-                    <div class="row my-2 border">
-                        <div class="col-4 p-0">
-                            <img src="{{asset('dist/img/img.png')}}" width="100%" height="100%" alt="">
-                        </div>
-                        <div class="col-8 p-2">
-                            <p><strong>Lorem ipsum dolor sit amet.</strong></p>
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. dgfd</span>
+                    </div> <br>
+                    <div class="price">
+                        <h6>Price Range</h6> <hr>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <input type="number" class="form-control text-center" value="1">
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="number" class="form-control text-center" value="1000">
+                            </div>
+                            <div class="col-sm-4">
+                                <button class="btn btn-success">Search</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -127,10 +138,10 @@
         </div>
 
         <!-- start product right section -->
-        <div class="col-sm-8">
+        <div class="col-sm-9">
             <div class="card">
                 <div class="card-header">
-                    <h4 class="card-title">Recent Post</h4>
+                    <h4 class="card-title">Posts</h4>
                 </div>
                 <div class="card-body">
                     <!-- product row -->

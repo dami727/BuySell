@@ -116,14 +116,15 @@
           <!-- product --> 
           <li class="nav-item">
             <a href="{{route('products')}}" class="nav-link {{request()->is('products')?'active':''}}">
-              <i class="nav-icon fas fa-tachometer-alt"></i><p> Products </p>
+              <i class="fab fa-product-hunt nav-icon"></i><p> Products </p>
             </a>
           </li>
           <!-- end product -->
           <!-- start Order Management -->
           <li class="nav-item">
             <a href="" class="nav-link">
-              <i class="nav-icon fas fa-tachometer-alt"></i><p> Order Management <i class="fas fa-angle-left right"></i></p>
+              <i class="fas fa-dharmachakra nav-icon"></i>
+              <p> Order Management <i class="fas fa-angle-left right"></i></p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
@@ -204,7 +205,7 @@
           <!-- start dispus -->
           <li class="nav-item">
             <a href="" class="nav-link">
-              <i class="nav-icon fas fa-tachometer-alt"></i><p> Dispus <i class="fas fa-angle-left right"></i></p>
+              <i class="fas fa-disease nav-icon"></i><p> Dispus <i class="fas fa-angle-left right"></i></p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
@@ -265,11 +266,337 @@
           <!-- start Buyer Management -->
           <li class="nav-item">
             <a href="" class="nav-link">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p> Buyer Management </p>
+              <i class="fab fa-buysellads nav-icon"></i>
+              <p> Buyer Management </p> <i class="fas fa-angle-left right"></i>
             </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Buyer List </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Approve Buyer </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Seller Discussion </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Seller Commission </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Seller Report </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Seller Payment History </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Seller Wallet </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Withdrow </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Subscription </p>
+                </a>
+              </li>
+            </ul>
           </li>
           <!-- end Buyer Management -->
+          <!-- start refarel -->
+          <li class="nav-item">
+            <a href="" class="nav-link">
+              <i class="fas fa-sync-alt nav-icon"></i>
+              <p> Refarel Code/Link </p> <i class="fas fa-angle-left right"></i>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Refarel List </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Refarel Bonus </p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- end refarel -->
+          <!-- start comment -->
+          <li class="nav-item">
+            <a href="" class="nav-link">
+              <i class="fas fa-comment nav-icon"></i>
+              <p> Comment</p> <i class="fas fa-angle-left right"></i>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> New Comment </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Approve Comment </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Decline Comment </p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- end comment -->
+          <!-- start review -->
+          <li class="nav-item">
+            <a href="" class="nav-link">
+              <i class="fas fa-star nav-iocn"></i>
+              <p> Review </p> <i class="fas fa-angle-left right"></i>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> New Review </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Approve Review </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Decline Review </p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- end review -->
+          <!-- start report -->
+          <li class="nav-item">
+            <a href="" class="nav-link">
+              <i class="fas fa-bug nav-icon"></i>
+              <p> Report </p> <i class="fas fa-angle-left right"></i>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> New Report </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Approve Report </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Decline Report </p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- end report -->
+          <!-- start blogs -->
+          <li class="nav-item">
+            <a href="" class="nav-link">
+              <i class="fab fa-blogger-b nav-icon"></i>
+              <p> Blogs </p> <i class="fas fa-angle-left right"></i>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Add Blogs </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Manage Blogs </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Category </p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- end blogs -->
+          <!-- start massage -->
+          <li class="nav-item">
+            <a href="" class="nav-link">
+              <i class="fas fa-comments nav-icon"></i>
+              <p> Massage </p> <i class="fas fa-angle-left right"></i>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Live Chat </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Ticket </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Complain </p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- end massege -->
+          <!-- start employ -->
+          <li class="nav-item">
+            <a href="" class="nav-link">
+              <i class="fas fa-users nav-icon"></i>
+              <p> Employ </p> <i class="fas fa-angle-left right"></i>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> New Employ </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Manage Employ </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Add Role </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Manage Role </p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- end employ -->
+          <!-- start web setting -->
+          <li class="nav-item">
+            <a href="" class="nav-link">
+              <i class="fas fa-cogs nav-icon"></i>
+              <p> Web Settingse </p> <i class="fas fa-angle-left right"></i>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Homepage Setting </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Manu Setting </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Language Setting </p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- end web setting -->
+          <!-- start setting -->
+          <li class="nav-item">
+            <a href="" class="nav-link">
+              <i class="fas fa-cog nav-iocn"></i>
+              <p> Setting </p> <i class="fas fa-angle-left right"></i>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> App Setting </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Unit Setting </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Currency Setting </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Language Setting </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Email Setting </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="fas fa-angle-right nav-icon"></i>
+                  <p> Add Center </p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- end setting -->
 
 
 
