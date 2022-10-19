@@ -11,13 +11,18 @@
 </head>
 <body>
     <div class="login-body">
+            @if($errors->any())
+                    <div class="alert alert-danger">
+                        {{$errors->first()}}
+                    </div>
+                @endif
         <div class="text-center">
             <h1 class="user-login"><i class="fa-solid fa-circle-user"></i></h1>
             <h4>User Login</h4>
         </div>
         <div class="row">
             <div class="col-12">
-            <form action="{{ route('login') }}" method="POST">
+            <form action="{{ route('buyer_login') }}" method="POST">
                 @csrf
                 @if($errors->any())
                     <div class="alert alert-danger">
@@ -31,7 +36,16 @@
                 <div class="form-group mt-2">
                     <label for="password" class="form-label">Password</label>
                     <input type="password" name="password" id="password" class="form-control" placeholder="Password">
-                </div> <br>
+                </div> 
+                <div class="form-group">
+                    <label for="account_type" class="form-label">Account Type</label>
+                    <select name="account_type" id="account_type" class="form-control" >
+                        <option value="0">--select type--</option>
+                        <option value="buyer">Buyer</option>
+                        <option value="seller">Seller</option>
+
+                    </select>
+                </div><br>
                 <button type="submit" class="btn btn-success px-4">Login</button>
                 <a href="{{route('register')}}" class="btn btn-outline-dark px-3">Register</a>
             </form>

@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
+use Redirect;
 use Illuminate\Support\Facades\Hash;
 
 
@@ -37,6 +38,7 @@ class AuthenticatedSessionController extends Controller
             'ver_code'    => 'required',
             'email'       => 'required',
             'password'    => 'required',
+            'account_type'    => 'required',
            
         ]);
         $data = array (
@@ -45,6 +47,7 @@ class AuthenticatedSessionController extends Controller
             'email'           => $request->input('email'),
             'password'        => Hash::make($request->input('password')),
             'rafer_code'      => $request->input('rafer_code'),
+            'account_type'    => $request->input('account_type'),
             'created_at'      => Carbon::now(),
             'updated_at'      => Carbon::now(),
         );
@@ -59,6 +62,33 @@ class AuthenticatedSessionController extends Controller
         // $request->session()->regenerate();
 
         // return redirect()->intended(RouteServiceProvider::HOME);
+    }
+    public function postlogin(Request $request){
+        $validated = $request->validate([
+            'email'       => 'required',
+            'password'    => 'required',
+            'account_type'    => 'required',
+
+        ]);
+        $email =$request->input('email');
+        $password =$request->input('password');
+        $account_type =$request->input('account_type');
+        $buyer = DB::table('buyers')->select('*')->where('email', $email)->first();
+        dd($buyer);
+        if($buyer){
+            if(Hash::check($password, $buyer->password)){
+                $data = array (
+                    'email' => $email,
+                    'account_type' => $account_type,
+                );
+                $request->session()->put('buyer', (object)$data);
+                return redirect('dashboard')->with('status', 'Welcome Back to buyer ');
+            }else{
+                return Redirect::back()->withErrors(['error' => 'Wrong Password']);
+            }
+        }else{
+            return Redirect::back()->withErrors(['error' => 'Wrong Email']);
+        }
     }
 
     /**

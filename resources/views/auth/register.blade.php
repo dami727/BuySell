@@ -14,12 +14,12 @@
     <div class="container my-3">
         <form action="{{route('login')}}" method="post" enctype="multipart/form-data">
             @csrf
-            @if($errors->any())
+            <div class="registation_body">
+                @if($errors->any())
                     <div class="alert alert-danger">
                         {{$errors->first()}}
                     </div>
-            @endif
-            <div class="registation_body">
+                @endif
                 <div class="card" id="registation">
                     <div class="card-body">
                         <h5>Create an Account</h5> <hr>
@@ -45,10 +45,17 @@
                             <label for="" class="form-label">Password</label>
                             <input type="password" class="form-control" name="password">
                         </div>
-                        {{-- <div class="form-group">
+                        {{--<div class="form-group">
                             <label for="" class="form-label">Confirm Password</label>
                             <input type="password" class="form-control" name="confirm_password">
-                        </div> --}}
+                        </div>--}}
+                        <div class="form-group">
+                            <label for="" class="form-label">Account Type</label>
+                            <select name="account_type" id="account_type" class="form-control">
+                                <option value="buyer">Buyer</option>
+                                <option value="seller">Seller</option>
+                            </select>
+                        </div>
                         <div class="form-group">
                             <label for="" class="form-label">Refar Code</label>
                             <input type="refar_code" class="form-control" name="rafer_code" placeholder="Refar code">

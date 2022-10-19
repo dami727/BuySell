@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('ver_code');
             $table->string('email')->unique();
             $table->string('password');
+            $table->string('account_type');
             $table->string('rafer_code')->nullable();
             $table->timestamps();
         });
